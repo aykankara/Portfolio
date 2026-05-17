@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aykan Kara - Portfolio</title>
+    
+    <!-- Google Fontları -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigasyon (Menü) -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AK.</a>
+            
+            <!-- Mobil için hamburger menü -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <button id="lang-btn" class="lang-btn" aria-label="Toggle Language">TR</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ana Sayfa Bölümü -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h3 class="greeting" data-i18n="hero_greeting">Hello, I'm</h3>
+            <h1 class="name">Aykan Kara</h1>
+            <p class="short-bio" data-i18n="hero_bio">A passionate software developer creating interactive and dynamic web applications. I turn ideas into elegant digital solutions.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/aykankara" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aykan-kara-901964273/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+        <!-- Ana sayfa için arka plan elemanları -->
+        <div class="background-elements">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+            <div class="about-content glass-card">
+                <div class="about-text">
+                    <p data-i18n="about_p1">I am a highly motivated software development student at Izmir University of Economics, with a strong passion for web technologies and software engineering. My journey began with an innate curiosity about how things work on the internet, leading me to dive deep into both frontend and backend development.</p>
+                    <p data-i18n="about_p2">Over the years, I've honed my skills in building robust, interactive, and user-centric web applications. I constantly strive to write clean, maintainable code and keep up with the latest industry trends. I believe in the power of continuous learning and enjoy tackling complex problems head-on.</p>
+                    <p data-i18n="about_p3">Beyond coding, I'm an avid team player who values clear communication and collaboration. Whether it's designing a dynamic UI or optimizing algorithms, I bring enthusiasm and dedication to every project I undertake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Çalışmalarım Bölümü -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">My Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Proje 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>SkyPass</h3>
+                            <i class="fas fa-plane-departure project-icon"></i>
+                        </div>
+                        <p data-i18n="project1_desc">A modern and interactive application designed to facilitate flight and travel management. Focuses on seamless user experience and modern UI patterns.</p>
+                        <a href="https://github.com/aykankara/SkyPass" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="btn_goto_project">Go to Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proje 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Simple ATM Simulator</h3>
+                            <i class="fas fa-money-check-alt project-icon"></i>
+                        </div>
+                        <p data-i18n="project2_desc">A console-based simulator demonstrating core programming concepts, logical flows, and switch-case operations in an ATM environment.</p>
+                        <a href="https://github.com/aykankara/simple-atm-simulator" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="btn_goto_project">Go to Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Proje 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Interactive Shopping Cart</h3>
+                            <i class="fas fa-shopping-cart project-icon"></i>
+                        </div>
+                        <p data-i18n="project3_desc">A dynamic web application calculating tiered discounts, managing cart state, and showcasing robust JavaScript DOM manipulation skills.</p>
+                        <a href="https://github.com/aykankara/interactive-shopping-cart" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="btn_goto_project">Go to Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                
+                <div class="contact-info glass-card">
+                    <h3 data-i18n="contact_info_title">Contact Information</h3>
+                    <p data-i18n="contact_info_desc">Feel free to reach out to me via email or through my social media channels. I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>karaaykan8@gmail.com</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-university"></i>
+                        <a href="https://www.ieu.edu.tr" target="_blank" rel="noopener noreferrer" data-i18n="contact_uni">Izmir University of Economics</a>
+                    </div>
+
+                    <div class="social-links alt">
+                        <a href="https://github.com/aykankara" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aykan-kara-901964273/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="firstName" data-i18n="form_fname">First Name</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="lastName" data-i18n="form_lname">Last Name</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email" data-i18n="form_email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="subject" data-i18n="form_subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="message" data-i18n="form_msg">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-i18n="form_submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aykan Kara. <span data-i18n="footer_text">All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
